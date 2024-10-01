@@ -48,7 +48,7 @@ def generate_pie_description(category_counts):
 
 def prediksi():
     # Memuat model yang sudah disimpan
-    with open('linear_regression_model.pkl', 'rb') as file:
+    with open('streamlit_app/linear_regression_model.pkl', 'rb') as file:
         loaded_model = pickle.load(file)
         
     st.markdown("<h1 style='text-align: center;'>Menu Prediksi Investasi</h1>", unsafe_allow_html=True)
@@ -62,7 +62,7 @@ def prediksi():
 
     if option == 'Prediksi Jumlah Investasi Berdasarkan Tahun':
         # Memuat model regresi linear
-        model_filename = 'linear_regression_model.pkl'
+        model_filename = 'streamlit_app/linear_regression_model.pkl'
 
         data = pd.DataFrame({
             'Year': [2018, 2019, 2020, 2021, 2022, 2023],
@@ -102,9 +102,9 @@ def prediksi():
 
     elif option == 'Prediksi Jumlah Investasi Berdasarkan Komponen':
         # Memuat model regresi linear dan scaler
-        model_filename = 'resources/linear_model.pkl'
-        scaler_filename = 'resources/scaler.pkl'
-        modelRF_filename = 'resources/random_forest_model.pkl'
+        model_filename = 'streamlit_app/resources/linear_model.pkl'
+        scaler_filename = 'streamlit_app/resources/scaler.pkl'
+        modelRF_filename = 'streamlit_app/resources/random_forest_model.pkl'
 
         # Opsi untuk memilih input manual atau unggah file
         input_option = st.radio("Pilih Metode Input:", ('Input Manual', 'Unggah File Excel'))
