@@ -18,7 +18,7 @@ def profil():
     )
 
     st.markdown('<div class="center">', unsafe_allow_html=True)
-    st.image("https://github.com/GdWidnyana/Sistem_PRIDE_DPMPTSP/blob/main/streamlit_app/resources/profil1.png", caption= "I Gede Widnyana")
+    st.image("streamlit_app/resources/profil1.png", caption= "I Gede Widnyana")
     st.markdown('</div>', unsafe_allow_html=True)
 
     st.markdown("---")
