@@ -4,17 +4,23 @@ from utils import login_user
 def login():
     st.markdown("<h1 style='text-align: center;'>Sistem PRIDE (Prediksi dan Analisa Data Investasi)</h1>", unsafe_allow_html=True)
 
+    # Cek jika pengguna sudah login
+    if 'loggedIn' in st.session_state and st.session_state['loggedIn']:
+        st.success(f"Anda sudah login sebagai {st.session_state['username']}.")
+        return  # Jika sudah login, keluar dari fungsi ini
+
     # Form login
     username = st.text_input("Username")
     password = st.text_input("Password", type='password')
 
     if st.button("Login"):
+        # Memeriksa kredensial
         if login_user(username, password):
             st.session_state['loggedIn'] = True
             st.session_state['username'] = username
-            st.experimental_rerun()  # Refresh the page after login
+            st.experimental_rerun()  # Refresh the page setelah login
         else:
-            st.error("Incorrect Username/Password")
+            st.error("Username atau Password salah")
 
     # Center align the login button and increase size
     st.markdown("""
