@@ -14,11 +14,17 @@ def login():
     password = st.text_input("Password", type='password')
 
     if st.button("Login"):
+        # Memeriksa kredensial
         if login_user(username, password):
             st.session_state['loggedIn'] = True
             st.session_state['username'] = username
-            st.legacy_caching.clear_cache()  # Membersihkan cache
-            st.experimental_rerun()  # Refresh the page setelah login
+            
+            # Gunakan try-except untuk menangani AttributeError
+            try:
+                st.experimental_rerun()  # Refresh the page setelah login
+            except AttributeError:
+                pass  # Abaikan kesalahan dan teruskan
+
         else:
             st.error("Username atau Password salah")
 
