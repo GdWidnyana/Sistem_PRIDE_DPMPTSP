@@ -9,7 +9,7 @@ from prediksi import prediksi
 st.set_page_config(page_title="Sistem Analisa dan Prediksi")
 
 # Menampilkan logo di sidebar
-st.sidebar.image("https://github.com/GdWidnyana/Sistem_PRIDE_DPMPTSP/blob/main/streamlit_app/resources/dpmptsp.png", use_column_width=True)
+st.sidebar.image("streamlit_app/resources/dpmptsp.png", use_column_width=True)
 
 # Inisialisasi state sesi
 if 'loggedIn' not in st.session_state:
