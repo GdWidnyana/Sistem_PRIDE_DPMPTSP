@@ -32,10 +32,10 @@ def profil():
     - **Email**: gedewidnyana430@gmail.com
     - **LinkedIn**: https://www.linkedin.com/in/i-gede-widnyana
     - **GitHub**: https://github.com/GdWidnyana
-    - **Keahlian**: Python, Machine Learning, Deep Learning, Data Visualization, dan Businnes Inteligence.
+    - **Keahlian**: Python, Machine Learning, Deep Learning, Data Visualization, dan Businnes Intelligence.
     - **Dokumen Hak Cipta (HKI) Sistem PRIDE** : https://bit.ly/HKI_IGedeWidnyana 
 
-    Jika Anda memiliki pertanyaan atau ingin berdiskusi, jangan ragu untuk menghubungi saya melalui platform di atas.
+    Jika Anda memiliki pertanyaan atau ingin berdiskusi, jangan ragu untuk menghubungi saya melalui email di atas.
     """)
 
     st.markdown("---")
