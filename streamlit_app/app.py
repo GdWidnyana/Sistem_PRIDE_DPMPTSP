@@ -11,9 +11,16 @@ st.set_page_config(page_title="Sistem Analisa dan Prediksi")
 # # Menampilkan logo di sidebar
 # st.sidebar.image("streamlit_app/resources/dpmptsp.png", use_column_width=True)
 
-# Menampilkan heading di sidebar
-st.sidebar.title("Sistem PRIDE")
-st.sidebar.markdown("### oleh I Gede Widnyana")
+# Menampilkan heading di sidebar dengan rata tengah
+st.sidebar.markdown(
+    """
+    <div style="text-align: center;">
+        <h1>Sistem PRIDE</h1>
+        <h2>oleh I Gede Widnyana</h2>
+    </div>
+    """, 
+    unsafe_allow_html=True
+)
 
 # Inisialisasi state sesi
 if 'loggedIn' not in st.session_state:
