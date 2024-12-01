@@ -8,8 +8,12 @@ from prediksi import prediksi
 # Set page config di sini
 st.set_page_config(page_title="Sistem Analisa dan Prediksi")
 
-# Menampilkan logo di sidebar
-st.sidebar.image("streamlit_app/resources/dpmptsp.png", use_column_width=True)
+# # Menampilkan logo di sidebar
+# st.sidebar.image("streamlit_app/resources/dpmptsp.png", use_column_width=True)
+
+# Menampilkan heading di sidebar
+st.sidebar.title("Sistem PRIDE")
+st.sidebar.markdown("### oleh I Gede Widnyana")
 
 # Inisialisasi state sesi
 if 'loggedIn' not in st.session_state:
