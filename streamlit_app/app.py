@@ -32,7 +32,9 @@ else:
     st.sidebar.title("Menu")
     
     # Menampilkan sidebar hanya jika pengguna sudah login
-    page = st.sidebar.selectbox("Select a page:", ["Home", "Analisa", "Prediksi", "Profil"])
+    page = st.sidebar.selectbox("Select a page:", ["Home", "Analisa", "Prediksi"])
+
+    # page = st.sidebar.selectbox("Select a page:", ["Home", "Analisa", "Prediksi", "Profil"])
 
     if page == "Home":
         home()
