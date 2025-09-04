@@ -16,7 +16,7 @@ st.sidebar.markdown(
     """
     <div style="text-align: center;">
         <h1>Sistem PRIDE</h1>
-        # <h2><a href="https://www.linkedin.com/in/i-gede-widnyana/" target="_blank" style="text-decoration: none; color: inherit;">oleh I Gede Widnyana</a></h2>
+        <h2><a href="https://badungkab.go.id" target="_blank" style="text-decoration: none; color: inherit;">Kabupaten Badung</a></h2>
     </div>
     """, 
     unsafe_allow_html=True
