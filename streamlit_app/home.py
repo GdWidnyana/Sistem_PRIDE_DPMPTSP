@@ -24,9 +24,7 @@ def home():
            distribusi dan tren data investasi.
         
         3. **Prediksi Data:** Menerapkan model prediktif untuk meramalkan tren jumlah investasi di masa depan.
-        
-        4. **Profil:** Melihat informasi profil pengembang sistem dan hak cipta produk.
-        
+            
         **❗Catatan Penting**: Pastikan Anda sudah melakukan login untuk mengakses fitur-fitur di atas.
     """)
     
