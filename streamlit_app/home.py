@@ -41,10 +41,10 @@ def home():
         5. **Panduan penggunaaan sistem** secara lengkap disajikan dalam guide book di link : https://bit.ly/GuideBook-Sistem-PRIDE
     """)
     
-    st.write("----------------------------------------------------------------")
+    # st.write("----------------------------------------------------------------")
     # Informasi kontak atau bantuan
-    st.subheader("Kontak dan Bantuan⚠️")
-    st.write("""
-        Jika Anda memerlukan bantuan atau memiliki pertanyaan lebih lanjut, silakan hubungi **Pengembang Sistem** melalui 
-       **[email 📩 : gedewidnyana430@gmail.com](mailto:@gedewidnyana430@gmail.com)**
-    """)
+    # st.subheader("Kontak dan Bantuan⚠️")
+    # st.write("""
+    #     Jika Anda memerlukan bantuan atau memiliki pertanyaan lebih lanjut, silakan hubungi **Pengembang Sistem** melalui 
+    #    **[email 📩 : gedewidnyana430@gmail.com](mailto:@gedewidnyana430@gmail.com)**
+    # """)
